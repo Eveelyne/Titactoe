@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+:root {
+    --color-secondary: #C06E52;
+    --color-primary: #FBF2C0;
+    --color-gray: #48392A;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-primary);
+    font-family: "Rubik Mono One", monospace;
+    color: var(--color-gray);
+    font-size: 6rem;
+}
+
+.tictactoe {
+    display: flex;
+    flex-flow: column;
+    width: 50rem;
+    height: 50rem;
+    background-color: var(--color-secondary);
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-basis: 33.33%;
+    gap: 2rem;
+}
+
+.cell {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+.cell:hover {
+    box-shadow: inset 0px 0px 50px -12px #8C6565;
+    user-select: none;
+}
+
+button {
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--color-secondary);
+    font-family: "Rubik Mono One", monospace;
+    font-size: 1.5rem;
+    padding: 1rem 1.7rem;
+}
+
+button:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* ajouter un bouton, mettre le text content à rien du tout pour tous les carrés du jeu */
